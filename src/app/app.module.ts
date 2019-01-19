@@ -36,7 +36,7 @@ export function provideConfig(){
     FooterComponent,
     NavbarComponent,
     SharedComponent,
-    LoginCompComponent
+    LoginCompComponent,
   ],
   imports: [
     BrowserModule,
