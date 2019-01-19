@@ -1,4 +1,4 @@
-<div class="login-box L3">
+<!-- <div class="login-box L3">
   <h2>Social Login</h2>
   <a href="#" class="social-button" id="facebook-connect" (click)="facebookLogin()"> <span>Connect with Facebook</span></a>
   <a href="#" class="social-button" id="google-connect" (click)="googleLogin()"> <span>Connect with Google</span></a>
@@ -12,4 +12,49 @@
   <h4>{{ user.name }}</h4>
   <p>{{ user.email }}</p>
 </div>
+</div> -->
+
+<div class="container" style="margin-top: 10%">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Login with Social Media</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="#" class="fb btn" (click)="facebookLogin()">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn" (click)="linkedinLogin()">
+          <i class="fa fa-twitter fa-fw"></i> Login with LinkedIn
+        </a>
+        <a href="#" class="google btn" (click)="googleLogin()" ><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+      
+    </div>
+  </form>
 </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col" >
+      <a href="#" style="color:white; background-color: black" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white; background-color: black" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>  
