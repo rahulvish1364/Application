@@ -9,6 +9,8 @@ import { SharedComponent } from './shared/shared.component';
 import {LoginCompComponent} from './login-comp/login-comp.component';
 import { from } from 'rxjs';
 import { SocialLoginModule , AuthService, GoogleLoginProvider , FacebookLoginProvider , LinkedInResponse, AuthServiceConfig, LinkedinLoginProvider}from 'ng4-social-login';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 const config = new AuthServiceConfig([
  {
    id: GoogleLoginProvider.PROVIDER_ID,
@@ -37,6 +39,8 @@ export function provideConfig(){
     NavbarComponent,
     SharedComponent,
     LoginCompComponent,
+    CartComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
