@@ -11,6 +11,7 @@ import { from } from 'rxjs';
 import { SocialLoginModule , AuthService, GoogleLoginProvider , FacebookLoginProvider , LinkedInResponse, AuthServiceConfig, LinkedinLoginProvider}from 'ng4-social-login';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import {EntitiesModule} from './entities/entities.module'
 const config = new AuthServiceConfig([
  {
    id: GoogleLoginProvider.PROVIDER_ID,
@@ -45,7 +46,8 @@ export function provideConfig(){
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SocialLoginModule
+    SocialLoginModule,
+    EntitiesModule
   ],
   providers: [{provide :AuthServiceConfig, useFactory: provideConfig}],
   bootstrap: [AppComponent]
