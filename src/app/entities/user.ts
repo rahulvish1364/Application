@@ -4,6 +4,6 @@ export interface IUser {
     address: any; // this should be change to the type address in future
     email: string;
     password: string;
-    contact: number;
+    contact: import('./contact').Contact;
 }
 

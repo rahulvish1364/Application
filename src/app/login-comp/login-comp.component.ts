@@ -31,9 +31,6 @@ export class LoginCompComponent implements OnInit {
   signOut(): void {
     this.socialAuthService.signOut();
   }
-
-
-  
   ngOnInit() {
     this.socialAuthService.authState.subscribe((user) => {
       this.user = user;

@@ -2,9 +2,9 @@ import {IUser} from './user';
 
 export class Customer implements IUser {
     id: number;    name: string;
-    address: any;
+    address: any;   
     email: string;
     password: string;
-    contact: number;
+    contact: import('./contact').Contact;
 
 }

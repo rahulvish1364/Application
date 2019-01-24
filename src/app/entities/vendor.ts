@@ -5,6 +5,6 @@ export class Vendor implements IUser{
     address: any;
     email: string;
     password: string;
-    contact: number;
-    verificationStatus: boolean;
+    contact: import('./contact').Contact;
+    verificationStatus: boolean = false;
 }
