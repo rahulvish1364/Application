@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import {EventModule} from './event/event.module';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 ////////////////////////////Components////////////////////////////
 import { AppComponent } from './app.component';
@@ -17,6 +17,11 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import {EntitiesModule} from './entities/entities.module';
 import {  BirthdayComponent} from "./birthday/birthday.component";
+import { VendorSpecificComponent } from './vendor-specific/vendor-specific.component';
+import { VenuesComponent } from './vendor-specific/venues/venues.component';
+import { DecorationComponent } from './vendor-specific/decoration/decoration.component';
+import { CateringComponent } from './vendor-specific/catering/catering.component';
+import { ShowallComponent } from './vendor-specific/showall/showall.component';
 const config = new AuthServiceConfig([
  {
    id: GoogleLoginProvider.PROVIDER_ID,
@@ -31,6 +36,9 @@ const config = new AuthServiceConfig([
    provider:new  LinkedinLoginProvider('812r84a7n3hl3c')
  }
 ], false)
+
+
+
 
 export function provideConfig(){
   return config;
@@ -47,14 +55,20 @@ export function provideConfig(){
     LoginCompComponent,
     CartComponent,
     CheckoutComponent,
-    BirthdayComponent
+    BirthdayComponent,
+    VendorSpecificComponent,
+    VenuesComponent,
+    DecorationComponent,
+    CateringComponent,
+    ShowallComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SocialLoginModule,
     EntitiesModule,
-    EventModule
+    EventModule,
+    NgbModule
   ],
   providers: [{provide :AuthServiceConfig, useFactory: provideConfig}],
   bootstrap: [AppComponent]
