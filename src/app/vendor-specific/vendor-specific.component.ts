@@ -14,7 +14,7 @@ export class VendorSpecificComponent implements OnInit {
   }
 
   OnReload(){
-    this.router.navigate(['/vendor'], {relativeTo: this.route})
+   // this.router.navigate(['/vendor'], {relativeTo: this.route})
 
   }
 }
