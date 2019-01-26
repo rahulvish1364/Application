@@ -4,6 +4,21 @@ import { AppRoutingModule } from './app-routing.module';
 import {EventModule} from './event/event.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+//////////////////////////////////////////
+
+//import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {ReactiveFormsModule} from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatInputModule } from "@angular/material/input";
+import {  MatSelectModule } from "@angular/material/select";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+
+
+
+////////////////////////////////////////////
+
+
 ////////////////////////////Components////////////////////////////
 import { AppComponent } from './app.component';
 import {IndexComponent} from './index/index.component'
@@ -22,6 +37,7 @@ import { VenuesComponent } from './vendor-specific/venues/venues.component';
 import { DecorationComponent } from './vendor-specific/decoration/decoration.component';
 import { CateringComponent } from './vendor-specific/catering/catering.component';
 import { ShowallComponent } from './vendor-specific/showall/showall.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 const config = new AuthServiceConfig([
  {
    id: GoogleLoginProvider.PROVIDER_ID,
@@ -60,7 +76,8 @@ export function provideConfig(){
     VenuesComponent,
     DecorationComponent,
     CateringComponent,
-    ShowallComponent
+    ShowallComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +85,16 @@ export function provideConfig(){
     SocialLoginModule,
     EntitiesModule,
     EventModule,
-    NgbModule
+    NgbModule.forRoot(),
+    BrowserAnimationsModule,
+    MatButtonModule, 
+    MatCheckboxModule,
+    ReactiveFormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatSelectModule
+
   ],
   providers: [{provide :AuthServiceConfig, useFactory: provideConfig}],
   bootstrap: [AppComponent]

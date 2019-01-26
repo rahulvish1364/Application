@@ -9,14 +9,19 @@ import { VendorSpecificComponent } from './vendor-specific/vendor-specific.compo
 import { DecorationComponent } from './vendor-specific/decoration/decoration.component';
 import { CateringComponent } from './vendor-specific/catering/catering.component';
 import { ShowallComponent } from './vendor-specific/showall/showall.component';
+import { BirthdayComponent } from './birthday/birthday.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 const routes: Routes = [
-  {path:'index', component:IndexComponent},
+  {path: 'login', component: LoginCompComponent},
+  {path:'', component:IndexComponent},
   {path:'login-comp',component:LoginCompComponent},
   {path:'shared',component:SharedComponent},
   {path:'vendor', component: ShowallComponent},
   {path :'vendor/venues', component: VenuesComponent},
   {path :'vendor/decoration', component: DecorationComponent},
   {path :'vendor/catering', component: CateringComponent},
+  {path: 'birthday', component: BirthdayComponent},
+  {path: 'signup', component: SignUpComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

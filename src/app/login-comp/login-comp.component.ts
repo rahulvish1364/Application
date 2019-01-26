@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GoogleLoginProvider, FacebookLoginProvider, AuthServiceConfig, AuthService, LinkedinLoginProvider, SocialUser } from 'ng4-social-login';
 
-
+import {  FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-login-comp',
   templateUrl: './login-comp.component.html',
@@ -12,6 +12,7 @@ export class LoginCompComponent implements OnInit {
   public loggedIn : boolean 
   constructor(public socialAuthService : AuthService) {  }
 
+  public myform : FormGroup
   facebookLogin(){
     this.socialAuthService.signIn(FacebookLoginProvider.PROVIDER_ID).then(userData =>{
       this.user = userData
