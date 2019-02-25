@@ -1,5 +1,5 @@
 {
-  "name": "even-tmanagement-system",
+  "name": "application",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,20 +11,33 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~7.2.0",
+    "@angular/animations": "^7.2.2",
+    "@angular/cdk": "^7.2.2",
     "@angular/common": "~7.2.0",
     "@angular/compiler": "~7.2.0",
     "@angular/core": "~7.2.0",
     "@angular/forms": "~7.2.0",
+    "@angular/material": "^7.2.2",
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+<<<<<<< HEAD
     "bcryptjs": "^2.4.3",
     "bootstrap": "^3.3.7",
     "core-js": "^2.5.4",
     "dotenv": "^6.2.0",
     "joi": "^14.3.1",
+=======
+    "@ng-bootstrap/ng-bootstrap": "^4.0.1",
+    "angular-bootstrap-md": "^7.3.0",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.5.4",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
+    "ng4-social-login": "^1.4.2",
+>>>>>>> 7fc771c2a70c8ebf4d95748193e98ce969b3d39f
     "rxjs": "~6.3.3",
+    "rxjs-compat": "^6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
@@ -35,6 +48,10 @@
     "@angular/language-service": "~7.2.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+<<<<<<< HEAD
+=======
+    "@types/jquery": "^3.3.29",
+>>>>>>> 7fc771c2a70c8ebf4d95748193e98ce969b3d39f
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
